@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emote - Your Personal Mood Tracker</title>
+    <meta
+      name="description"
+      content="Track your emotions, analyze trends, and keep your journals private with biometric security."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <!-- Using inline SVG for immediate icon rendering without external dependencies for this landing page -->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img
+              src="logo.png"
+              alt="Emote Logo"
+              style="height: 40px; width: auto; margin-right: 0.5rem"
+            />
+            <span>Emote</span>
+          </div>
+          <a href="#download" class="btn btn-primary">Download App</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="container">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 4rem;
+              flex-wrap: wrap;
+            "
+          >
+            <div class="hero-content">
+              <h1>
+                Understand Your Mind,<br />
+                One Mood at a Time.
+              </h1>
+              <p>
+                A beautiful, private, and insightful way to track your emotional
+                journey. Powered by Flutter & Firebase.
+              </p>
+              <div
+                style="
+                  display: flex;
+                  gap: 1rem;
+                  flex-wrap: wrap;
+                  align-items: center;
+                "
+              >
+                <a href="app-release.apk" download class="btn btn-primary">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download APK
+                </a>
+                <div
+                  style="display: flex; flex-direction: column; gap: 0.25rem"
+                >
+                  <button
+                    class="btn"
+                    style="
+                      background: rgba(255, 255, 255, 0.05);
+                      border: 1px solid var(--glass-border);
+                      color: var(--text-secondary);
+                      cursor: not-allowed;
+                      opacity: 0.7;
+                    "
+                  >
+                     App Store
+                  </button>
+                  <span
+                    style="
+                      font-size: 0.75rem;
+                      color: var(--accent-secondary);
+                      text-align: center;
+                      font-weight: 600;
+                    "
+                    >Coming Soon</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-image">
+              <img
+                src="app_preview.png"
+                alt="App Preview"
+                class="mockup-img"
+                style="
+                  max-height: 600px;
+                  border-radius: 40px;
+                  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+                  border: 4px solid #333;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2>Features that care about you</h2>
+          <p style="text-align: center; max-width: 600px; margin: 0 auto">
+            Designed to help you build a healthy habit of self-reflection with
+            tools that are both powerful and easy to use.
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <span class="feature-icon">✨</span>
+              <h3 class="feature-title">Expressive Logging</h3>
+              <p>
+                Log your daily mood using beautiful, animated emojis powered by
+                Lottie. Make tracking your day feel alive.
+              </p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">📊</span>
+              <h3 class="feature-title">Detailed Analytics</h3>
+              <p>
+                Visualize your mood trends over time with interactive charts.
+                Spot patterns and understand your triggers.
+              </p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">📅</span>
+              <h3 class="feature-title">Calendar View</h3>
+              <p>
+                See your emotional history at a glance. A bird's-eye view of
+                your month to see how far you've come.
+              </p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">🔒</span>
+              <h3 class="feature-title">Biometric Security</h3>
+              <p>
+                Your thoughts are private. Secure your journal entries with
+                FaceID or Fingerprint authentication.
+              </p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">☁️</span>
+              <h3 class="feature-title">Cloud Sync</h3>
+              <p>
+                Never lose your data. All your entries are securely backed up to
+                Firebase Firestore in real-time.
+              </p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">🌗</span>
+              <h3 class="feature-title">Dark & Light Mode</h3>
+              <p>
+                Seamless theme switching to match your preference and comfort,
+                day or night.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container">
+          <h2>A Look Inside</h2>
+          <p>Beautiful interfaces designed for clarity and comfort.</p>
+          <div class="gallery-grid">
+            <img src="app_preview.png" alt="Home Screen" class="gallery-item" />
+            <img
+              src="screen_analytics.png"
+              alt="Analytics Screen"
+              class="gallery-item"
+            />
+            <img
+              src="screen_journal.png"
+              alt="Journal Screen"
+              class="gallery-item"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="stack">
+        <div class="container">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem">
+            Built with modern tech
+          </h3>
+          <div class="stack-tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Provider</span>
+            <span class="tag">Lottie</span>
+            <span class="tag">FL Chart</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="download">
+      <div class="container footer-content">
+        <div class="logo">
+          <img
+            src="logo.png"
+            alt="Emote Logo"
+            style="height: 50px; width: auto; margin-right: 0.5rem"
+          />
+          <span>Emote</span>
+        </div>
+        <p>Start your journey to better emotional health today.</p>
+        <div
+          style="
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+          "
+        >
+          <a href="app-release.apk" download class="btn btn-primary"
+            >Download APK for Android</a
+          >
+          <div style="display: flex; flex-direction: column; gap: 0.25rem">
+            <button
+              class="btn"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid var(--glass-border);
+                color: var(--text-secondary);
+                cursor: not-allowed;
+                opacity: 0.7;
+              "
+            >
+               App Store
+            </button>
+            <span
+              style="
+                font-size: 0.75rem;
+                color: var(--accent-secondary);
+                text-align: center;
+                font-weight: 600;
+              "
+              >Coming Soon</span
+            >
+          </div>
+        </div>
+        <div style="margin-top: 2rem; font-size: 0.875rem; opacity: 0.6">
+          &copy; 2026 Emote App. Open Source Project.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
